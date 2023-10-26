@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body,
+.app {
+  background-color: rgb(250, 250, 250);
+  width: 100%;
+  height: 100vh;
+}
+
+.headerComp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.headerComp .containIt {
+  display: flex;
+  align-items: center;
+}
+
+.containIt h1 {
+}
+.headerComp .containIt h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #4b4b4b;
+}
+
+.searchComp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containSearch {
+  display: flex;
+  width: 90%;
+  border: 1px solid black;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.searchComp input {
+  font-size: 1rem;
+  padding: 5px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.searchComp input:focus {
+  outline: none;
+}
+
+.searchBtn {
+  width: 4rem;
+  background-color: #778dff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  transition: 0.3s ease all;
+}
+
+.searchBtn:hover {
+  background-color: rgb(115, 80, 231);
+}
+
+.imgHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.imgHeader h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px #181818;
+  font-size: 25px;
+}
+
+.image-gallery-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 35px;
+}
+
+.image-gallery {
+  width: 77%;
+}
+
+.go-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: rgb(39, 39, 39);
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 20;
+  font-size: 1.5rem;
+  opacity: 0.4;
+}
+
+@keyframes animation1 {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.icon-to-top {
+  transform: translateY(-5px);
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.go-to-top:hover .icon-to-top {
+  animation: animation1 0.5s infinite;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+.add-files {
+  display: flex;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: rgb(212, 212, 212);
+  opacity: 0.9;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  z-index: 20;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-input-container {
+  width: 80vw;
+  height: 60vh;
+  background-color: orange;
+  position: fixed;
+  z-index: 100;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.react-photo-album--photo {
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: url("check_answer.gif");
+  background-position: center;
+  background-size: 7rem;
+  background-repeat: no-repeat;
+}
